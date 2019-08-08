@@ -23,6 +23,8 @@
 #include <unistd.h>		/* for convenience */
 #include <signal.h>		/* for SIG_ERR */
 
+#define ARG_MAX 4096
+
 #define	MAXLINE	4096			/* max line length */
 
 /*
@@ -124,5 +126,6 @@ void	TELL_PARENT(pid_t);
 void	TELL_CHILD(pid_t);
 void	WAIT_PARENT(void);
 void	WAIT_CHILD(void);
+
 
 #endif	/* _APUE_H */
